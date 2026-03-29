@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Politique de confidentialite — Vald Reloaded</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #080608;
+      --bg-card: #0e0a0a;
+      --border: #1c1010;
+      --red: #dc2626;
+      --red-bright: #f87171;
+      --text: #d4d4d4;
+      --text-muted: #6b6b6b;
+      --text-dim: #454545;
+      --white: #f0f0f0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      display: flex;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h1 .red {
+      color: var(--red);
+      text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    p { margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 8px 0 10px 20px;
+      color: var(--text);
+    }
+
+    li { margin-bottom: 4px; }
+
+    .highlight {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--red-bright);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--red);
+      text-shadow: 0 0 8px rgba(220, 38, 38, 0.3);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 0 0;
+      color: var(--text-dim);
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VALD <span class="red">RELOADED</span></h1>
+    <p class="subtitle">Politique de confidentialite — Derniere mise a jour : 29 mars 2026</p>
+
+    <div class="card">
+      <h2>Editeur de l'extension</h2>
+      <p>Cette extension est developpee par <span class="highlight">Timiliris_420</span> et distribuee gratuitement via le Chrome Web Store.</p>
+      <p>Contact : <a href="https://github.com/Timiliris-420" target="_blank" rel="noopener noreferrer">github.com/Timiliris-420</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Donnees collectees</h2>
+      <p><span class="highlight">Cette extension ne collecte aucune donnee personnelle.</span></p>
+      <p>Plus precisement :</p>
+      <ul>
+        <li>Aucun compte utilisateur n'est requis</li>
+        <li>Aucune donnee de navigation n'est collectee</li>
+        <li>Aucun cookie ou traceur n'est utilise</li>
+        <li>Aucune donnee n'est partagee avec des tiers</li>
+        <li>Aucune analyse comportementale n'est effectuee</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Stockage local</h2>
+      <p>L'extension utilise <span class="highlight">chrome.storage.local</span> pour enregistrer uniquement :</p>
+      <ul>
+        <li>Tes preferences de notification (son, persistance)</li>
+        <li>Le dernier statut connu du stream (live/offline)</li>
+        <li>L'horodatage de la derniere verification</li>
+      </ul>
+      <p>Ces donnees restent <span class="highlight">exclusivement sur ton appareil</span> et ne sont jamais transmises a un serveur.</p>
+    </div>
+
+    <div class="card">
+      <h2>Communications reseau</h2>
+      <p>L'extension effectue des requetes vers l'API <span class="highlight">valdapi.3de-scs.tech</span> pour recuperer :</p>
+      <ul>
+        <li>Le statut du stream Twitch de Vald (live/offline)</li>
+        <li>L'historique des streams passes</li>
+        <li>Les clips Twitch recents</li>
+      </ul>
+      <p>Ces requetes ne contiennent <span class="highlight">aucune information personnelle</span>. Seule l'adresse IP est transmise de maniere technique lors de la connexion au serveur (comme pour toute requete HTTP). Cette adresse IP n'est pas collectee ni stockee a des fins d'identification.</p>
+    </div>
+
+    <div class="card">
+      <h2>Permissions de l'extension</h2>
+      <ul>
+        <li><span class="highlight">alarms</span> — Verifier periodiquement le statut du stream</li>
+        <li><span class="highlight">notifications</span> — Afficher les alertes de stream</li>
+        <li><span class="highlight">storage</span> — Sauvegarder tes preferences localement</li>
+        <li><span class="highlight">host_permissions</span> — Communiquer avec l'API valdapi.3de-scs.tech</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Tes droits (RGPD)</h2>
+      <p>Conformement au Reglement General sur la Protection des Donnees (RGPD), tu disposes des droits suivants :</p>
+      <ul>
+        <li><span class="highlight">Droit d'acces</span> — L'extension ne stockant aucune donnee personnelle sur nos serveurs, il n'y a aucune donnee a consulter</li>
+        <li><span class="highlight">Droit de suppression</span> — Desinstaller l'extension supprime automatiquement toutes les donnees locales</li>
+        <li><span class="highlight">Droit d'opposition</span> — Tu peux desactiver les notifications dans les parametres a tout moment</li>
+      </ul>
+      <p>Pour toute question, contacte-nous via <a href="https://github.com/Timiliris-420" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Modifications</h2>
+      <p>Cette politique peut etre mise a jour. Les modifications seront indiquees par la date de derniere mise a jour en haut de cette page. L'utilisation continue de l'extension apres modification vaut acceptation.</p>
+    </div>
+
+    <div class="card">
+      <h2>Licence</h2>
+      <p>Cette extension est publiee sous <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">licence MIT</a>. Le code source est disponible sur <a href="https://github.com/Timiliris-420" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+
+    <div class="footer">VALD RELOADED — Pandemonium Edition</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Vald Live Notifier",
+  "version": "1.0.0",
+  "description": "Sois notifie quand Vald lance un live sur Twitch !",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://valdapi.3de-scs.tech/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; img-src 'self' https://valdapi.3de-scs.tech https://static-cdn.jtvnw.net https://clips-media-assets2.twitch.tv;"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+"options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
