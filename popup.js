@@ -318,15 +318,22 @@ async function loadHistory(forceRefresh = false) {
         meta.appendChild(liveViewerSpan);
       }
 
-      const peakSpan = document.createElement("span");
-      peakSpan.textContent = "Peak: " + formatViewers(s.peakViewers);
-      meta.appendChild(peakSpan);
+      if (s.peakViewers) {
+        const peakSpan = document.createElement("span");
+        peakSpan.textContent = "Peak: " + formatViewers(s.peakViewers);
+        meta.appendChild(peakSpan);
+      }
 
-      // Show average viewers if available
-      if (s.avgViewers !== undefined) {
+      if (s.avgViewers) {
         const avgSpan = document.createElement("span");
         avgSpan.textContent = "Moy: " + formatViewers(s.avgViewers);
         meta.appendChild(avgSpan);
+      }
+
+      if (s.vodViews) {
+        const vodSpan = document.createElement("span");
+        vodSpan.textContent = formatViewers(s.vodViews).replace("viewers", "vues VOD");
+        meta.appendChild(vodSpan);
       }
 
       item.appendChild(meta);
