@@ -1263,3 +1263,6 @@ header h1 .red {
 
 .social-item.ytmusic:hover { border-color: rgba(255, 0, 0, 0.3); box-shadow: 0 6px 20px rgba(255, 0, 0, 0.1); }
 .social-item.ytmusic:hover .social-icon { color: #ff0000; filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.5)); }
+
+.social-item.facebook:hover { border-color: rgba(24, 119, 242, 0.3); box-shadow: 0 6px 20px rgba(24, 119, 242, 0.1); }
+.social-item.facebook:hover .social-icon { color: #1877f2; filter: drop-shadow(0 0 8px rgba(24, 119, 242, 0.5)); }
